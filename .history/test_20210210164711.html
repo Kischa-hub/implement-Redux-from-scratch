@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>JavaScript setMinutes Method</title>
+  </head>
+  <body>
+    <script>
+      /*
+      //var dt = new Date("December 31, 2017 11:30:25");
+      //var dt = new Date("2/10/2021, 4:32:02 PM");
+      const tiko = new Date().toLocaleString();
+      console.log(tiko);
+      //document.write(tiko);
+      var dt = tiko.setMinutes(tiko.getMinutes() - 20);
+      console.log(dt);
+      // document.write(dt);
+      */
+
+      var mi = new Date().toLocaleString();
+      console.log("mi", mi);
+      var dt = new Date("2/10/2021, 4:32:02 PM");
+      console.log("before", dt);
+      dt.setMinutes(dt.getMinutes() - 20);
+      document.write("after", dt);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movies</title>
+  </head>
+  <body>
+    <script src="movieapp_ok.js"></script>
+    <!-- <h1>Movies App without Redux Lib</h1>
+    <h2>Commands</h2>
+    <h3>Admin section</h3>
+    <ul>
+      <li>addMovie("joker");</li>
+      <li>getAllMovies();</li>
+      <li>getMovie();</li>
+      <li>updateMovie();</li>
+      <li>deleteMovie();</li>
+    </ul> -->
+    <div className="{style.recipe}">
+      <h1>{title}</h1>
+      <ol>
+        {" "} {ingredients.map((ingredient) => (
+        <li>{ingredient.text}</li>
+        ))}
+      </ol>
+      <h3>{calories}</h3>
+      <img className="{style.image}" src="{imageSrc}" alt="{title}" />
+    </div>
+  </body>
+</html>
